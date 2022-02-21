@@ -1,9 +1,4 @@
-Xoops FAQ version 1.20
-
-This is a FAQ module for adding Question and Answer sessions.
-
-This version has been totally rewritten to work with php 5 and Xoops 2.3+
-
-If you would like to help with documentation for this module please contact us.
-
-XOOPS Module Team
+Installation
+1 - Copier le dossier xoopsfaq dans le dossier modules du site
+2 - Copier le dossier le contenu du dossier xoopslib - Il ajoute le plugin "showhide.js" dans le dossier plugins de jquery
+3 - Procéder à l'installation du module dans l'administraion du site

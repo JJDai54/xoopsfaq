@@ -19,7 +19,7 @@
  * @author John Neill
  * @version $Id: xoops_version.php 0000 10/04/2009 09:30:53 John Neill $
  * 
- * Mise à jour pour Xoops 2.5.7
+ * Mise à jour pour Xoops 2.5.7 +
  * @author Jean-Jacques DELALANDRE
  * 
  */
@@ -47,7 +47,7 @@ $modversion = array( 'name' => _MI_FAQ_XOOPSFAQ_NAME,
     'min_php' => '5.2',
     'min_xoops' => '2.5',
     'system_menu' => 1,
-    'paypal_link' =>'https://paypal.me/JJDELALANDRE?locale.x=fr_FR'
+    'paypal_link' =>''
 	);
 
 //interegration de moduleadmin  

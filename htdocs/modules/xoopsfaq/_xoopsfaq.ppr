@@ -144,9 +144,10 @@ _xoopsfaq
 13=index-faqByCategory.php
 14=admin\admin_header.php
 15=language\schinese_utf8\admin.php
+16=xoops_version.php
 [Selected Project Files]
 Main=
-Selected=language\french\modinfo.php
+Selected=xoops_version.php
 [include\functions.php]
 TopLine=257
 Caret=1,261
@@ -195,3 +196,6 @@ Caret=1,1
 [language\schinese_utf8\admin.php]
 TopLine=104
 Caret=3,134
+[xoops_version.php]
+TopLine=7
+Caret=22,50
