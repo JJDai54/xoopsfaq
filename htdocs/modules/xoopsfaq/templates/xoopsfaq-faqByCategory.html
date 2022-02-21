@@ -1,0 +1,215 @@
+<script>
+$(document).ready(function(){
+//alert("show_hide");
+   $('.show_hide').showHide({
+		speed: 500,  // speed you want the toggle to happen
+		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		changeText: 1, // if you dont want the button text to change, set this to 0
+
+		showText: '<{$smarty.const._MA_FAQ_READ_MORE}>',// the button text to show when a div is closed
+		hideText: '<{$smarty.const._MA_FAQ_READ_MINUS}>', // the button text to show when a div is open
+		showHideText: '<{$params.showHidetext}>',  //JJDai : permet de cacher le bouton "fermer"
+// 		showText: '<{$smarty.const._CC_MED_AFFICHER}> <img src="<{$smarty.const.JJD_ICO32}>plus.png" width="16px" height="16px" alt="" />',// the button text to show when a div is closed
+// 		hideText: '<{$smarty.const._CC_MED_CACHER}> <img src="<{$smarty.const.JJD_ICO32}>moins.png"  width="16px" height="16px" alt="" />', // the button text to show when a div is open
+		displayBlock: 'display_ruche_ok' // nom de l'objet qui stock la valeur en cours pour transfert entre page
+
+
+
+//alert("ici");
+	});
+
+});
+//alert("ici");
+
+</script>
+<style>
+#faq-title{
+    color: grey;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.answer_body{
+    padding-right:20px;
+}
+
+.lireLaSuite{
+/*
+    vertical-align: top;    background-color: #555555;
+    border: 1px #555555 solid;
+    box-sizing: border-box;
+    width: 230px;
+    margin: -828px 0px 0px 0px;
+*/
+
+    float: <{$params.hidetext_align}>;
+    padding-right:20px;
+}
+.bg_title{
+	background-image: url(images/FAQ-logo-title.jpg);
+    background-size: contain;
+    opacity: 0.3;
+    color: black;
+}
+
+div.background-title {
+  background: url(images/FAQ-logo-title.jpg) repeat;
+  background-size: 30%;
+  background-position: -50px -50px;
+  border: 0px solid black;
+  padding: 5px 5px 5px 10px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 12px 12px 12px 12px;
+}
+
+div.transbox {
+  margin: 0px;
+  background-color: #ffffff;
+  border: 0px solid black;
+  opacity: 0.7;
+  margin: 30px 120px 30px 120px;
+  border-radius: 12px 12px 12px 12px;
+}
+
+div.transbox p {
+  margin: 10px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 3em;
+  color: #000000;
+}
+</style>
+
+<div class="item-round-all blue-itemBody background-title">
+  <div class="transbox">
+    <center><p><{$smarty.const._MA_FAQ_FAQ}></p></center>
+  </div>
+</div>
+
+<{*
+      <div class="item-round-all blue-itemBody bg_title"><center><br><span id='faq-title' name='faq-title' style="color:black;"><{$smarty.const._MA_FAQ_FAQ}></span><br><br></center></div>
+*}>
+
+
+
+      <{include file="db:xoopsfaq_category_color_set.html"}>
+
+      <{*  ========== start category loop ========== *}>
+      <{foreach item=category from=$categorys name=lpCat}>&nbsp;&nbsp;
+        <{if $category.nbQuestions > 0 OR $category.show == 1 }>
+      <{assign var=color_set value=$category.color_set}>
+            <div class="item-round-no <{$category.color_set}>-itemHead" style="padding:12px;margin-top:-5px;">
+                <center>
+                  <img class="page_image" src="<{$smarty.const._FAQ_FLD}>images/folder.png" width="22" height="22" border="0" alt="<{$category.name}>" title="<{$category.name}>"/>&nbsp;
+                  <{* <strong><a href="index.php?cat_id=<{$category.id}>"><{$category.name}></a></strong> *}>
+                  <strong><{$category.title}></strong>
+                   <div style="top:5px;" class="lireLaSuite"><{$category.buttons}></div>
+                </center>
+            </div>
+            <div class="item-round-no <{$category.color_set}>-itemBody answer_body">
+                <ul style="margin-bottom:0px;">
+                  <!-- start question loop -->
+                  <{foreach item=question from=$category.questions name=lpItem}>
+                     <{* <li class="limagei">&nbsp;<a href="index.php?cat_id=<{$category.id}>#q<{$question.link}>"><{$question.title}></a> *}>
+                      <li class="limagei" title="(#<{$question.id}>)"><{$question.title}></li>
+
+                      <{if $question.answer != ""}><br><{$question.answer}><{/if}>
+                      <a href="index.php?cat_id=<{$category.id}>#q<{$question.link}>"></a>
+
+                      <{if $question.contents <> "" OR count($question.seealso)>0}>
+                      <a href="#" name="question-<{$question.id}>" class="show_hide question-title lireLaSuite" rel="#question-<{$question.id}>" title="#<{$question.id}>"><{$smarty.const._MA_FAQ_READ_MORE}></a>
+                      <div id="question-<{$question.id}>"  name="question" class="show_hide_div question" style="display:<{$display_ruche_ok}>">
+                            <{$question.contents}>
+                            <{if count($question.seealso)>0}>
+                              <hr class="red2-hr-style-two"><{$smarty.const._MA_FAQ_SEEALSO}> :
+                              <div style="margin-left:15px;">
+                                <{foreach item=itemSeealso from=$question.seealso}>
+                                  <li>&nbsp;<a href="<{$itemSeealso.url}>" target="blank"><{if $itemSeealso.lib != ''}><{$itemSeealso.lib}><{else}><{$itemSeealso.url}><{/if}></a></li>
+                                <{/foreach}>
+                              </div>
+                            <{/if}>
+
+                      </div>
+                      <{/if}>
+
+                      <{if $question.buttons <> ''}>
+                        <div class="item-round-no <{$category.color_set}>-itemBody" style='text-align:right;'>
+                                <{$question.buttons}>
+                        </div>
+                      <{/if}>
+
+
+
+
+
+                      <{if !$smarty.foreach.lpItem.last}><hr class="<{$category.color_set}>-hr-style-two"><{else}><br><{/if}>
+                  <{/foreach}>
+                  <!-- end question loop -->
+                </ul>
+            </div>
+            <{if $category.btnAddQestion <> ''}>
+              <div class="item-round-bottom <{$category.color_set}>-itemFoot" style='text-align:right;padding:12px;'>
+                    <{$category.btnAddQestion}>
+              </div>
+            <{else}>
+            <{/if}>
+
+        <{/if}>
+      <{/foreach}> <br>
+      <!-- end category loop -->
+
+<{* ==========================================================
+<div class="item-round-top <{$color_set}>-itemHead" style="padding:12px;margin:0px;">
+    <center><strong><{$smarty.const._MA_FAQ_MENU_COMMENTS}></strong></center>
+</div>
+
+<div style="margin:0px; padding: 3px;" class="pad2 marg2 <{$color_set}>-itemBody_scoop">
+    <{$commentsnav}>
+    <{$lang_notice}>
+</div>
+
+<div style="margin:0px; padding: 3px;" class="<{$color_set}>-itemBody_scoop">
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+</div>
+
+<div class="item-round-bottom <{$color_set}>-itemFoot">
+    <center>. . .</center>
+</div>
+*}>
+
+    <{* ------------------------------------------------------------------------- *}>
+    <{* JJD - Ajout de commentaire - plus logique de mettre directement suite a l'article *}>
+    <div class="itemInfo item-round-all <{$color_set}>-itemInfo"><{$smarty.const._COMMENTS}>
+    <{if $fbcomments == true}>
+        <div id="fb-root"></div>
+        <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+        <fb:comments href="<{$xoops_url}>/modules/news/article.php?storyid=<{$story.id}>" num_posts="5"
+                     width="500"></fb:comments>
+    <{/if}>
+
+
+    <div class="pad2 marg2 <{$color_set}>-itemBody_scoop">
+        <{$commentsnav}>
+        <{$lang_notice}>
+    </div>
+
+
+    <div class="pad2 marg2 <{$color_set}>-itemBody_scoop">
+        <{if $comment_mode == "flat"}>
+            <{include file="db:system_comments_flat.tpl"}>
+        <{elseif $comment_mode == "thread"}>
+            <{include file="db:system_comments_thread.tpl"}>
+        <{elseif $comment_mode == "nest"}>
+            <{include file="db:system_comments_nest.tpl"}>
+        <{/if}>
+    </div> <br><br>
+    </div>
+    <{* ------------------------------------------------------------------------- *}>

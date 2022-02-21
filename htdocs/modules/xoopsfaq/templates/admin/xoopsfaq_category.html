@@ -1,0 +1,41 @@
+
+<{if $categorys.nbCategorys > 0}>
+    <form action='category.php?op=order' method='post'>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+    	 <tr class='xoopsCenter'>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_ID}></th>
+    	 	<th style='text-align: left;'><{$smarty.const._AM_FAQ_TITLE}></th>
+            <th><{$smarty.const._AM_FAQ_CONTENTS_ACTIVE}></th>
+            <th><{$smarty.const._AM_FAQ_COLOR_SET}></th>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_CATEGORY_WEIGHT}></th>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_SHOW_HIDETEXT}></th>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_HIDETEXT_ALIGN}></th>
+    	 	<th style='width: 20%;'><{$smarty.const._AM_FAQ_ACTIONS}></th>
+    	 </tr>
+
+
+        <{foreach item=category from=$categorys.items name=lpCat}>
+            <tr class='xoopsCenter <{$category.class}>'>
+              <td style='text-align:center;'><{$category.category_id}></td>
+              <td style='text-align:left;'><a href="category.php?op=edit&category_id=<{$category.category_id}>"><{$category.category_title}></a></td>
+              <td style='text-align:center;'><{$category.activeIcone}></td>
+              <td style='text-align:center;'><{$category.category_color_set}></td>
+              <td style='text-align:center;'><{$category.inpOrder}>
+              <td style='text-align:center;'><{$category.show_hidetext}>
+              <td style='text-align:center;'><{$category.hidetext_align}>
+              <td style='text-align:center;'><{$category.actions}></td>
+            </tr>
+        <{/foreach}>
+    </table>
+
+	<tr>
+        <td colspan='6' class='head'><center><input type='submit' value='Submit'></center></td>
+    </tr>
+<{else}>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+      <tr style='text-align: center;'>
+          <td colspan='6' class='even'><{$smarty.const._AM_FAQ_NOLISTING}></td>
+      </tr>
+    </table>
+<{/if}>
+

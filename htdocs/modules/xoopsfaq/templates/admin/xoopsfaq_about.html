@@ -1,0 +1,138 @@
+
+<!-- template -->
+<{if $smarty.const._MED_SHOW_TPL_NAME==1}>
+<div style="text-align: center; background-color: black;"><span style="color: yellow;">Template : <{$smarty.template}></span></div>
+<{/if}>
+<{*
+
+<div id="admin_Title" class="bold shadowlight alignmiddle">
+    <div id="admin_header"     style='background-image: url(<{$smarty.const.XOOPS_URL}><{$smarty.const._FW_JJD_ICONADM}>/about.png);'>
+        <{$smarty.const._CC_MED_MODULE_NAME}> : <{$smarty.const._AM_MODULEADMIN_ABOUT_MODULEINFO}>
+    </div>
+    <div class="cabinet_Action"></div>
+</div>
+*}>
+
+<style>
+.about{
+    vertical-align: top;
+}
+</style>
+
+<table name="about">
+    <tr>
+        <td class="about">
+            <fieldset>
+    			<legend class="admin_MediumTitle bold shadowlight"><{$module_name}></legend>
+    			<div>
+    				<img class="logo" src="<{$smarty.const.XOOPS_URL}>/modules/<{$module_dirname}>/<{$module_image}>" alt="" /><br />
+    				<label><{$module_name}> Version : </label><text><{$module_version}></text><br />
+    				<!--label><{$smarty.const._AM_JJD_ABOUT_RELEASEDATE}> : </label><text><{$module_release}></text><br /-->
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_AUTHOR}> : </label><text><{$module_author}></text><br />
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_CREDITS}> : </label><text><{$module_credits}></text><br />
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_LICENSE}> : </label><text><a class="tooltip" href="<{$module_license_url}>" rel="external" title="<{$module_license}><br /><{$module_license_url}>"><{$module_license}></a></text>
+    			</div>
+    		</fieldset>
+            <{* ------------------------------------------------------------- *}>
+            <fieldset>
+    			<legend class="admin_MediumTitle bold shadowlight"><{$smarty.const._AM_MODULEADMIN_ABOUT_MODULEINFO}></legend>
+    			<div>
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_RELEASEDATE}></label><text class="bold"><{$module_update_date}></text></br />
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_MODULESTATUS}> : </label><text><{$module_status}></text><br />
+    				<label><{$smarty.const._AM_MODULEADMIN_ABOUT_WEBSITE}> : </label><text><a class="tooltip" href="<{$module_website_url}>" rel="external" title="<{$module_website_name}> - <{$module_website_url}>"><{$module_website_name}></a></text><br />
+    			</div>
+    		</fieldset>
+            <{* ------------------------------------------------------------- *}>
+			<fieldset>
+				<legend class="admin_MediumTitle bold shadowlight"><{$smarty.const._AM_MODULEADMIN_ABOUT_AUTHOR_INFO}></legend>
+				<div>
+					<label><{$smarty.const._AM_MODULEADMIN_ABOUT_AUTHOR}> : </label><text><{$module_author}></text><br />
+					<label><{$smarty.const._AM_JJD_ABOUT_WEBSITE}> : </label><text><a class="tooltip" href="<{$author_website_url}>" rel="external" title="<{$author_website_name}><br /><{$author_website_url}>"><{$author_website_name}></a></text><br />
+				</div>
+			</fieldset>
+            <{* ------------------------------------------------------------- *}>
+<div id="about_donate">
+    <fieldset>
+        <legend class=\"label\"><{$smarty.const._AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT}></legend><br>
+        <div style="clear: both; height: 1em;"></div>
+<center>
+                        <{* ----- code paypal ----- *}>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="WAWMH2NP6LLYW" />
+<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
+</form>
+                        <{* ----- /code paypal ----- *}>
+</center>
+      <br>
+    </fieldset>
+</div>
+        </td>
+        <td>
+			<{if $changelog}>
+				<fieldset>
+					<legend class="admin_MediumTitle bold shadowlight"><{$smarty.const._AM_MODULEADMIN_ABOUT_CHANGELOG}></legend>
+					<div class="txtchangelog"><{$changelog}></div>
+				</fieldset>
+			<{/if}>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<{*
+
+_AM_MODULEADMIN_ABOUT_DESCRIPTION: <{$smarty.const._AM_MODULEADMIN_ABOUT_DESCRIPTION}><br>
+_AM_MODULEADMIN_ABOUT_UPDATEDATE: <{$smarty.const._AM_MODULEADMIN_ABOUT_UPDATEDATE}><br>
+_AM_MODULEADMIN_ABOUT_DESCRIPTION: <{$smarty.const._AM_MODULEADMIN_ABOUT_DESCRIPTION}><br>
+_AM_MODULEADMIN_ABOUT_MODULESTATUS: <{$smarty.const._AM_MODULEADMIN_ABOUT_MODULESTATUS}><br>
+_AM_MODULEADMIN_ABOUT_WEBSITE: <{$smarty.const._AM_MODULEADMIN_ABOUT_WEBSITE}><br>
+_AM_MODULEADMIN_ABOUT_BY: <{$smarty.const._AM_MODULEADMIN_ABOUT_BY}><br>
+_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY: <{$smarty.const._AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY}><br>
+_AM_MODULEADMIN_ABOUT_AMOUNT: <{$smarty.const._AM_MODULEADMIN_ABOUT_AMOUNT}><br>
+_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED: <{$smarty.const._AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED}><br>
+_AM_MODULEADMIN_ABOUT_AMOUNT_TTL: <{$smarty.const._AM_MODULEADMIN_ABOUT_AMOUNT_TTL}><br>
+_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN: <{$smarty.const._AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN}><br>
+_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT: <{$smarty.const._AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT}><br>
+_AM_MODULEADMIN_ABOUT_MODULEINFO: <{$smarty.const._AM_MODULEADMIN_ABOUT_MODULEINFO}><br>
+_AM_MODULEADMIN_ABOUT_CHANGELOG: <{$smarty.const._AM_MODULEADMIN_ABOUT_CHANGELOG}><br>
+
+define('_AM_MODULEADMIN_ABOUT_CHANGELOG', 'Journal des modifications');
+define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Montant ');
+define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Entrez le montant en euros, par ex. 25,00 €');
+define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'Euro');
+define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\€?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?€');
+
+define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Faire un don en utilisant PayPal ou une carte de crédit en ligne !');
+define('_AM_MODULEADMIN_ABOUT_DESCRIPTION', 'Description ');
+define('_AM_MODULEADMIN_ABOUT_MODULEINFO', 'Info sur le module');
+define('_AM_MODULEADMIN_ABOUT_MODULESTATUS', 'Statut ');
+define('_AM_MODULEADMIN_ABOUT_UPDATEDATE', 'Mise à jour ');
+define('_AM_MODULEADMIN_ABOUT_WEBSITE', 'Site internet ');
+define('_AM_MODULEADMIN_ABOUT_RELEASEDATE', 'Sorti le : ');
+define('_AM_MODULEADMIN_ABOUT_AUTHOR', 'Auteur : ');
+define('_AM_MODULEADMIN_ABOUT_BY', 'par ');
+define('_AM_MODULEADMIN_ABOUT_CREDITS', 'Remerciements : ');
+define('_AM_MODULEADMIN_ABOUT_LICENSE', 'Licence : ');
+define('_AM_MODULEADMIN_ABOUT_AUTHOR_NAME', 'Nom de l\'auteur : ');
+define('_AM_MODULEADMIN_ABOUT_AUTHOR_INFO', 'Info sur l\'auteur');
+define('_AM_MODULEADMIN_HOME', 'Accueil');
+define('_AM_MODULEADMIN_DASHBOARD', 'Tableau de bord');
+define('_AM_MODULEADMIN_ABOUT', 'À propos');
+define('_AM_MODULEADMIN_PERMISSIONS', 'Permissions');
+//ModuleAdmin
+define('_AM_MODULEADMIN_ADMIN_FOOTER', "<div class='center smallsmall italic pad5'>Ce module est maintenu par la <a class='tooltip' rel='external' href='http://xoops.org/' title='Visitez la communauté XOOPS'>Communauté XOOPS</a></div>");
+*}>
+

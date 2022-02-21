@@ -1,0 +1,197 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=J:\_Contacts\Conseil Des Sages\Site Web\sages91.fr\WEB Site Principal\web\modules\xoopsfaq
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+Extensions=*.*
+[Project tree]
+_xoopsfaq
+	+xoopsfaq
+		+_ressources
+			_ressources\index.html
+			_ressources\showHide.js
+		+admin
+			admin\admin_header.php
+			admin\category.php
+			admin\contents.php
+			admin\index.html
+			admin\index.php
+			admin\menu.php
+			admin\permissions.php
+			admin\about.php
+		+assets
+			+css
+				assets\css\index.html
+				assets\css\style.css
+				assets\css\style-item-color.css
+				assets\css\style-item-design.css
+			+js
+				assets\js\index.html
+				assets\js\xoopsfaq.js
+			assets\index.html
+		+class
+			class\category.php
+			class\contents.php
+			class\groups.php
+			class\index.html
+			class\link.php
+			class\formdatalist.php
+		+docs
+			docs\changelog.txt
+			docs\index.html
+			docs\readme.txt
+		-images
+			-icons
+				-32
+					images\icons\32\add.png
+					images\icons\32\category.png
+					images\icons\32\content.png
+					images\icons\32\contents.png
+					images\icons\32\index.html
+					images\icons\32\permissions.png
+				images\icons\index.html
+			images\delete.png
+			images\edit.png
+			images\faq.png
+			images\folder.png
+			images\index.html
+			images\microbutton.gif
+			images\question2.gif
+			images\slogo.png
+		+include
+			+versions
+				include\versions\index.html
+				include\versions\xoopsfaq-220.php
+				include\versions\xoopsfaq-230.php
+			include\constantes.php
+			include\functions.php
+			include\functions-color-set.php
+			include\functions-permissions.php
+			include\index.html
+			include\install.php
+			include\search.inc.php
+		+language
+			-english
+				language\english\admin.php
+				language\english\common.php
+				language\english\index.html
+				language\english\main.php
+				language\english\modinfo.php
+			+french
+				language\french\admin.php
+				language\french\common.php
+				language\french\index.html
+				language\french\main.php
+				language\french\modinfo.php
+			-schinese_utf8
+				language\schinese_utf8\admin.php
+				language\schinese_utf8\common.php
+				language\schinese_utf8\index.html
+				language\schinese_utf8\main.php
+				language\schinese_utf8\modinfo.php
+			language\index.html
+		+sql
+			sql\index.html
+			sql\mysql.sql
+		+templates
+			+admin
+				templates\admin\index.html
+				templates\admin\xoopsfaq_category.html
+				templates\admin\xoopsfaq_contents.html
+			+css
+				templates\css\index.html
+				templates\css\module.css
+			templates\index.html
+			templates\xoopsfaq_category.html
+			templates\xoopsfaq_category_color_set.html
+			templates\xoopsfaq_index.html
+			templates\xoopsfaq-faqByCategory.html
+		comment_delete.php
+		comment_edit.php
+		comment_new.php
+		comment_post.php
+		comment_reply.php
+		footer.php
+		header.php
+		index.php
+		index-faqByCategory.php
+		index-v220.php
+		xoops_version.php
+[Open project files]
+0=include\functions.php
+1=admin\category.php
+2=class\category.php
+3=docs\changelog.txt
+4=templates\admin\xoopsfaq_links.html
+5=class\link.php
+6=admin\link.php
+7=admin\contents.php
+8=class\contents.php
+9=language\french\admin.php
+10=class\formdatalist.php
+11=assets\js\xoopsfaq.js
+12=language\french\modinfo.php
+13=index-faqByCategory.php
+14=admin\admin_header.php
+15=language\schinese_utf8\admin.php
+[Selected Project Files]
+Main=
+Selected=language\french\modinfo.php
+[include\functions.php]
+TopLine=257
+Caret=1,261
+[admin\category.php]
+TopLine=65
+Caret=1,83
+[class\category.php]
+TopLine=120
+Caret=1,138
+[docs\changelog.txt]
+TopLine=10
+Caret=1,41
+[templates\admin\xoopsfaq_links.html]
+TopLine=17
+Caret=53,19
+[class\link.php]
+TopLine=168
+Caret=15,193
+[admin\link.php]
+TopLine=16
+Caret=1,30
+[admin\contents.php]
+TopLine=1
+Caret=1,1
+[class\contents.php]
+TopLine=235
+Caret=1,266
+[language\french\admin.php]
+TopLine=121
+Caret=160,149
+[class\formdatalist.php]
+TopLine=104
+Caret=64,135
+[assets\js\xoopsfaq.js]
+TopLine=1
+Caret=1,24
+[language\french\modinfo.php]
+TopLine=44
+Caret=51,60
+[index-faqByCategory.php]
+TopLine=125
+Caret=44,151
+[admin\admin_header.php]
+TopLine=1
+Caret=1,1
+[language\schinese_utf8\admin.php]
+TopLine=104
+Caret=3,134
