@@ -1,8 +1,3 @@
-<p>Joyeux Anniverssaire</p><p><audio width="300" height="32" preload="none" src="http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3"></audio></p><p><object width="144" height="60" data="
-http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3" type="application/x-shockwave-flash"><param name="src" value="
-http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3" /><param name="volume" value="60" /><param name="loop" value="loop" /><param name="autostart" value="false" /></object></p>
-
-http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3
 
 => version 2.30 du 15/12/2020 (JJDai - jjdelalandre@orange.fr)
 ------------------------------------------------------
@@ -18,7 +13,7 @@ http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3
 - "color_set"
   table category ajout du champ "categorys_color_set" qui permet un affichage des category par couleur
   ajout des css nécéssaires dans assets/css
-- Refonte complete du front office avec affichae par categorie et utilisation du plugin "showhide"
+- Refonte complete du front office avec affichage par catégorie et utilisation du plugin "showhide"
 - Ajout des permissions "admin du module", "admin des categorys", "admin des questions"
 - Ajout des permissions de "visualisation par categorie" dans le front office
 - Ajout des boutons d'édition, ajout et suppression pour les categories dans le front office (soumis à parmissions)
@@ -32,9 +27,10 @@ http://test.sages91.fr/uploads/mp3/Patrick_Sebastien-Joyeux_anniversaire.mp3
     hidetext_align : permet d'aligner à drite le texte "lire la suite"
 - Ajout de l'onglet "About"
 - Révision de l'interface admin
-- divers corrections: affichage des commentaires,
-                      constantes de langue,
-                      indice de tableau inexistant, ...
+- divers corrections: 
+----- affichage des commentaires,
+----- constantes de langue,
+----- indice de tableau inexistant, ...
 
 - Ajout des boutons "edit", delete", ... dans le font office soumlis à permissions
 

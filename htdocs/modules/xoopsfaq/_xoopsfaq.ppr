@@ -147,7 +147,7 @@ _xoopsfaq
 16=xoops_version.php
 [Selected Project Files]
 Main=
-Selected=xoops_version.php
+Selected=docs\changelog.txt
 [include\functions.php]
 TopLine=257
 Caret=1,261
@@ -158,8 +158,8 @@ Caret=1,83
 TopLine=120
 Caret=1,138
 [docs\changelog.txt]
-TopLine=10
-Caret=1,41
+TopLine=11
+Caret=1,34
 [templates\admin\xoopsfaq_links.html]
 TopLine=17
 Caret=53,19
@@ -197,5 +197,5 @@ Caret=1,1
 TopLine=104
 Caret=3,134
 [xoops_version.php]
-TopLine=7
+TopLine=19
 Caret=22,50
