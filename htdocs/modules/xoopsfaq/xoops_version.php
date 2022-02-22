@@ -36,9 +36,9 @@ $modversion = array( 'name' => _MI_FAQ_XOOPSFAQ_NAME,
 	'license_url' => 'www.gnu.org/licenses/gpl-2.0.html/',
 	'contributors' => '',
 	'credits' => 'The Xoops Module Development Team',
-	'version' => 2.30,
+	'version' => 2.32,
 	'status' => 'RC1',
-	'releasedate' => '2020/12/15',
+	'releasedate' => '2022/02/22',
 	'official' => 1,
 	'image' => 'images/slogo.png',
 	'website_url' => 'https://www.frxoops.org/',
@@ -67,7 +67,7 @@ $modversion["onUpdate"]	    = "include/install.php";
 /**
  * Module SQL Tables
  */
-$modversion['tables'] = array( 'xoopsfaq_contents', 'xoopsfaq_categories' ) ;
+$modversion['tables'] = array( 'xoopsfaq_contents', 'xoopsfaq_categories', 'xoopsfaq_links') ;
 
 /**
  * Module Admin

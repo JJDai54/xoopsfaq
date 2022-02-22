@@ -149,7 +149,7 @@ _xoopsfaq
 18=admin\menu.php
 [Selected Project Files]
 Main=
-Selected=admin\menu.php
+Selected=xoops_version.php
 [include\functions.php]
 TopLine=257
 Caret=1,261
@@ -199,8 +199,8 @@ Caret=1,1
 TopLine=104
 Caret=3,134
 [xoops_version.php]
-TopLine=19
-Caret=22,50
+TopLine=22
+Caret=19,39
 [sql\mysql.sql]
 TopLine=31
 Caret=29,56
