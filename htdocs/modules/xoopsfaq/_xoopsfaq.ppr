@@ -130,12 +130,28 @@ _xoopsfaq
 [Open project files]
 0=admin\category.php
 1=include\functions-permissions.php
+2=include\functions-color-set.php
+3=xoops_version.php
+4=admin\index.php
+5=language\french\admin.php
 [Selected Project Files]
 Main=
-Selected=include\functions-permissions.php
+Selected=language\french\admin.php
 [admin\category.php]
 TopLine=1
 Caret=35,27
 [include\functions-permissions.php]
 TopLine=29
 Caret=5,52
+[include\functions-color-set.php]
+TopLine=54
+Caret=10,79
+[xoops_version.php]
+TopLine=47
+Caret=1,70
+[admin\index.php]
+TopLine=32
+Caret=1,54
+[language\french\admin.php]
+TopLine=115
+Caret=1,133

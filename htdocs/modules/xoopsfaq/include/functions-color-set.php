@@ -69,8 +69,20 @@ global $helper, $xoopsModuleCongig;
       $dir = news_get_css_path();
     }
     */
+      $f = XOOPS_PATH . "/Frameworks/jquery/plugins/showHide.js";
+      if (file_exists($f)){
+        $GLOBALS['xoTheme']->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/plugins/showHide.js');
+      }else{
+        $f = XOOPS_ROOT_PATH . "/Frameworks/jquery/plugins/showHide.js";
+        if (file_exists($f)){
+          $GLOBALS['xoTheme']->addScript(XOOPS_URL . '/Frameworks/jquery/plugins/showHide.js');
+        }
+      }
+                    
+
 
  $GLOBALS['xoTheme']->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/plugins/showHide.js');
+                                                       
     //$dir = "" . $fld;
     $dir = "browse.php?" . get_css_path();
     $GLOBALS['xoTheme']->addStylesheet($GLOBALS['xoops']->url($dir . "/style-item-design.css"));

@@ -130,14 +130,6 @@ define('_AM_FAQ_SHOW_HIDETEXT_DSC','Affiche ou non le Bouton "Fermer" du contenu
 define('_AM_FAQ_HIDETEXT_ALIGN','Position de "Lire la suite" à droite');
 //define('_AM_FAQ_HIDETEXT_ALIGN_DSC','0 = Aligne le texte PositionAffiche ou non le Bouton "Fermer" du contenu des question (Lire la suite)');
 
-$f = XOOPS_PATH . "/Frameworks/jquery/plugins/showHide.js";
-if (file_exists($f)) {
-    $msg = "";
-}else{
-    $msg = "";
-}
-
-
 define('_AM_FAQ_LINKS_HEADER', 'Gestion des liens récurrents dans les réponses' );
 define('_AM_FAQ_LINKS_LIST_DSC', '' );
 define( '_AM_FAQ_CONFIRM_DEL_LINK', 'Etes-vous sûr de vouloir supprimer ce lien ?' );

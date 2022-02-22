@@ -49,6 +49,7 @@ if ($menu ==''){
       $index_admin->addInfoBoxLine('description',_MI_FAQ_XOOPSFAQ_INFO, '', '', 'information');    
       
       $f = XOOPS_PATH . "/Frameworks/jquery/plugins/showHide.js";
+      if (!file_exists($f)) $f = XOOPS_ROOT_PATH . "/Frameworks/jquery/plugins/showHide.js";                    
       $msg = (file_exists($f)) ? _MI_FAQ_SHOWHIDE_OK  : _MI_FAQ_SHOWHIDE_NO;
       $index_admin->addInfoBoxLine('description', sprintf($msg, $f), '', '', 'information');
 
