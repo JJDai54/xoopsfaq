@@ -53,7 +53,7 @@ CREATE TABLE `xoopsfaq_links` (
   `link_url` VARCHAR(255) NOT NULL,
   `link_newtab` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`link_id`),
-  UNIQUE KEY  (`link_title`),
+  UNIQUE KEY  (`link_title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 ;
 
 

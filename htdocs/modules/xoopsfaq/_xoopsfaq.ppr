@@ -145,9 +145,11 @@ _xoopsfaq
 14=admin\admin_header.php
 15=language\schinese_utf8\admin.php
 16=xoops_version.php
+17=sql\mysql.sql
+18=admin\menu.php
 [Selected Project Files]
 Main=
-Selected=docs\changelog.txt
+Selected=admin\menu.php
 [include\functions.php]
 TopLine=257
 Caret=1,261
@@ -158,8 +160,8 @@ Caret=1,83
 TopLine=120
 Caret=1,138
 [docs\changelog.txt]
-TopLine=11
-Caret=1,34
+TopLine=10
+Caret=1,41
 [templates\admin\xoopsfaq_links.html]
 TopLine=17
 Caret=53,19
@@ -199,3 +201,9 @@ Caret=3,134
 [xoops_version.php]
 TopLine=19
 Caret=22,50
+[sql\mysql.sql]
+TopLine=31
+Caret=29,56
+[admin\menu.php]
+TopLine=21
+Caret=20,27

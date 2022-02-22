@@ -24,7 +24,7 @@ defined( 'XOOPS_ROOT_PATH' ) or die( 'Restricted access' );
  * Admin Menus
  */
 $pathIcon32 = 'images/icons/32/';
-$showAllTabs = false;
+$showAllTabs = true;
 require_once XOOPS_ROOT_PATH . '/modules/xoopsfaq/include/constantes.php';
 require_once XOOPS_ROOT_PATH . '/modules/xoopsfaq/include/functions-permissions.php';
 use Permissions AS Permissions;
