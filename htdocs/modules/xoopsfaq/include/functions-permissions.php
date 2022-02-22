@@ -49,7 +49,7 @@ function isPermited($permName, $id){
 global $xoopsUser;
 
     $userGroup = getUserGroup($xoopsUser);
-    //if(in_array (1, $userGroup)) return true;
+    if(in_array (1, $userGroup)) return true;
 
 
     $tPerm = getPermissions($permName, true);
