@@ -1,0 +1,47 @@
+<form name='opSelectCat' id='opSelectCat' action='contents.php' method='post'>
+    <{$selectCategory}>
+</form>
+
+<{if $questions.nbQuestions > 0}>
+    <form action='contents.php?op=order&category_id=<{$category_id}>' method='post'>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+        <tr class='xoopsCenter'>
+            <th style='width: 5%;'><{$smarty.const._AM_FAQ_CONTENTS_ID}></th>
+            <th style='text-align: left;'><{$smarty.const._AM_FAQ_CONTENTS_TITLE}></th>
+            <th><{$smarty.const._AM_FAQ_CONTENTS_ANSWER}></th>
+            <th style='width: 120px;'><{$smarty.const._AM_FAQ_CATEGORY}></th>
+            <th><{$smarty.const._AM_FAQ_CONTENTS_ACTIVE}></th>
+            <th style='width: 5%;text-align: right;'><{$smarty.const._AM_FAQ_CONTENTS_WEIGHT}></th>
+            <th><{$smarty.const._AM_FAQ_CONTENTS_PUBLISH}></th>
+            <th style='width: 100px;'><{$smarty.const._AM_FAQ_ACTIONS}></th>
+        </tr>
+
+        <{foreach item=question from=$questions.items name=lpCat}>
+            <tr class='xoopsCenter <{$question.class}>'>
+              <td style='text-align:center;'><{$question.id}></td>
+              <td style='text-align: left;' ><a href="contents.php?op=edit&contents_id=<{$question.id}>"><{$question.title}></td></a>
+              <td ><{$question.answer}></td>
+              <td ><{$question.catTitle}></td>
+              <td style='text-align:center;'><{$question.activeIcone}></td>
+              <td style='text-align:center;'><{$question.inpOrder}></td>
+              <td style='text-align:center;'><{$question.datePublished}></td>
+              <td style='text-align:center;'><{$question.actions}></td>
+           </tr>
+
+        <{/foreach}>
+
+
+    </table>
+
+    <tr>
+        <td colspan='9' class='head'><center><input type='submit' value='Submit'></center></td>
+    </tr>
+<{else}>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+      <tr style='text-align: center;'>
+          <td colspan='9' class='even'><{$smarty.const._AM_FAQ_NOLISTING}></td>
+      </tr>
+    </table>
+    </form>
+<{/if}>
+

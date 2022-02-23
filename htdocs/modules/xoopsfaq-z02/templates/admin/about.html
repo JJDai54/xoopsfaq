@@ -1,0 +1,24 @@
+
+<div id="about">
+  <label class="label_after"><{$smarty.const._AM_MODULEADMIN_ABOUT_DESCRIPTION}></label>
+  <text><{$about.description}></text><br>
+
+  <label class="label_after"><{$smarty.const._AM_MODULEADMIN_ABOUT_UPDATEDATE}></label>
+  <text class="bold"><{$about.last_update}></text><br>
+
+  <label class="label_after"><{$smarty.const._AM_MODULEADMIN_ABOUT_MODULESTATUS}></label>
+  <text><{$about.module_status}></text>
+
+  <label class="label_after"><{$smarty.const._AM_MODULEADMIN_ABOUT_WEBSITE}></label>
+  <text><a class="tooltip" href="<{$about.module_website_url}>" rel="external" title="<{$about.module_website_name}> - <{$about.module_website_url}>" >
+
+  <{$about.module_website_name}>
+  </a></text>
+</div>
+
+
+
+
+
+
+

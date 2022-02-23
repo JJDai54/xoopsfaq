@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Name: main.php
  * Description: Xoops FAQ module user language defines
@@ -23,13 +23,13 @@
 defined( 'XOOPS_ROOT_PATH' ) or die( 'Accès restreint' );
 
 
-define( '_CO_FAQ_CONTENTS_EDIT', 'Editer la question');
-define( '_CO_FAQ_CONTENTS_DELETE', 'Supprimer la question');
-define( '_CO_FAQ_CONTENTS_ADD', 'Ajouter une question');
+define('_CO_FAQ_CONTENTS_EDIT', 'Editer la question');
+define('_CO_FAQ_CONTENTS_DELETE', 'Supprimer la question');
+define('_CO_FAQ_CONTENTS_ADD', 'Ajouter une question');
 
-define( '_CO_FAQ_CATEGORY_EDIT', 'Editer la catégorie');
-define( '_CO_FAQ_CATEGORY_DELETE', 'Supprimer la catégorie');
-define( '_CO_FAQ_CATEGORY_ADD', 'Ajouter une catégorie');
+define('_CO_FAQ_CATEGORY_EDIT', 'Editer la catégorie');
+define('_CO_FAQ_CATEGORY_DELETE', 'Supprimer la catégorie');
+define('_CO_FAQ_CATEGORY_ADD', 'Ajouter une catégorie');
 
 
 ?>

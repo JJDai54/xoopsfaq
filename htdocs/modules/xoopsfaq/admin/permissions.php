@@ -28,7 +28,7 @@ include_once XOOPS_ROOT_PATH . '/class/xoopsformloader.php';
 require_once XOOPS_ROOT_PATH . '/class/xoopsform/grouppermform.php';
 xoops_load('XoopsFormLoader');
 xoops_load('XoopsGroupPermForm');
-use Permissions;
+use Permissions as Permissions;
 
 
 $isPermit = Permissions\isPermited(_FAQ_PREFIX_PERM_ADMIN, _FAQ_PERM_PERMISSIONS);

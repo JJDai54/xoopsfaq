@@ -1,0 +1,35 @@
+
+<{if $links.nbLinks > 0}>
+    <form action='links.php?op=order' method='post'>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+    	 <tr class='xoopsCenter'>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_ID}></th>
+    	 	<th style='text-align: left;'><{$smarty.const._AM_FAQ_TITLE}></th>
+    	 	<th style='text-align: left;'><{$smarty.const._AM_FAQ_URL}></th>
+    	 	<th style='width: 5%;'><{$smarty.const._AM_FAQ_NEWTAB}></th>
+    	 	<th style='width: 20%;'><{$smarty.const._AM_FAQ_ACTIONS}></th>
+    	 </tr>
+
+
+        <{foreach item=link from=$links.items name=lpCat}>
+            <tr class='xoopsCenter <{$link.class}>'>
+              <td style='text-align:center;'><{$link.id}></td>
+              <td style='text-align:left;'><a href="link.php?op=edit&link_id=<{$link.link_id}>"><{$link.title}></a></td>
+              <td style='text-align:left;'><{$link.url}></td>
+              <td style='text-align:center;'><{$link.newtab}>
+              <td style='text-align:center;'><{$link.actions}></td>
+            </tr>
+        <{/foreach}>
+    </table>
+
+	<tr>
+        <td colspan='6' class='head'><center><input type='submit' value='Submit'></center></td>
+    </tr>
+<{else}>
+    <table width='100%' border='0' cellpadding='2' cellspacing='1' class='outer'>
+      <tr style='text-align: center;'>
+          <td colspan='6' class='even'><{$smarty.const._AM_FAQ_NOLISTING}></td>
+      </tr>
+    </table>
+<{/if}>
+

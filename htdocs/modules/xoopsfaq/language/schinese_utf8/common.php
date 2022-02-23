@@ -23,13 +23,13 @@
 defined( 'XOOPS_ROOT_PATH' ) or die( 'Accès restreint' );
 
 
-define( '_MA_FAQ_CONTENTS_EDIT', 'Edit the question');
-define( '_MA_FAQ_CONTENTS_DELETE', 'Delete the question');
-define( '_MA_FAQ_CONTENTS_ADD', 'Add new question');
+define('_MA_FAQ_CONTENTS_EDIT', 'Edit the question');
+define('_MA_FAQ_CONTENTS_DELETE', 'Delete the question');
+define('_MA_FAQ_CONTENTS_ADD', 'Add new question');
 
-define( '_MA_FAQ_CATEGORY_EDIT', 'Edit the category');
-define( '_MA_FAQ_CATEGORY_DELETE', 'Delete the category');
-define( '_MA_FAQ_CATEGORY_ADD', 'Add new category');
+define('_MA_FAQ_CATEGORY_EDIT', 'Edit the category');
+define('_MA_FAQ_CATEGORY_DELETE', 'Delete the category');
+define('_MA_FAQ_CATEGORY_ADD', 'Add new category');
 
 
 ?>

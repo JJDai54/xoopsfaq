@@ -1,0 +1,26 @@
+.show_hide{
+    color:rgb(255,0,0);
+    font-weight: bold;
+    }
+.show_hide_div{
+    display:none;
+	/*
+    background-color: rgba(241,227,209, 1);
+	background-color: RGB(255,250,238);
+	background-color: rgb(192,192,192);
+    */
+	background-color: rgb(241,227,209);
+
+	margin:7px;
+    border: 1px solid #aaa;
+	padding:7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    opacity:1;
+    box-shadow:0 0 10px #787878;
+    -webkit-box-shadow:0 0 10px #787878;
+    -moz-box-shadow:0 0 10px #787878;
+    }
+

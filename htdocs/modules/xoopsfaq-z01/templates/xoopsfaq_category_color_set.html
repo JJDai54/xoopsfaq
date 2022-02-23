@@ -1,0 +1,55 @@
+<{if $smarty.const.XFAQ_SHOW_TPL_NAME==1}>
+<div style="text-align: center; background-color: black;"><span style="color: yellow;">Template : <{$smarty.template}></span></div>
+<{/if}>
+
+
+<style>
+.div_color_set{
+  /* width:30px;
+  vertical-align: middle;
+  height:40px;
+  */
+  padding: 12px 12px 12px 12px;
+}
+div.faq-onglets {
+    border: 0px solid;
+    border-radius: 12px 12px 0px 0px;
+    padding: 8px 18px 0px 18px;
+    margin: 0px 0px 0px 0px;
+    height: 35px;
+    float:left;
+    position:relative;
+}
+
+div.faq-onglets2 {
+    border: 0px solid;
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 2px;
+    height: 5px;
+    float:left;
+    position:relative;
+}
+
+</style>
+
+<div>
+    <{if $showBtnAllCategorys}>
+      <div class="item-legend">
+        <a href="<{$smarty.const._FAQ_XURL}>index.php" >
+          <{$smarty.const._ALL}>
+        </a>
+      </div>
+    <{/if}>
+
+    <{foreach item=category from=$categorys name=lpCat}>zzzOzzzzzzOzzz
+          <div class="faq-onglets <{$category.color_set}>-item-legend" >
+            <a href="<{$smarty.const._FAQ_XURL}>/index.php?cat_id=<{$category.id}>" >
+              <{$category.title}>
+            </a>
+
+          </div>
+         <{if !$smarty.foreach.lpCat.last}><div class="faq-onglets2" ></div><{/if}>
+
+    <{/foreach}>
+</div>

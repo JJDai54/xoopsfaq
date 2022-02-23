@@ -1,0 +1,54 @@
+
+=> version 2.30 du 15/12/2020 (JJDai - jjdelalandre@orange.fr)
+------------------------------------------------------
+- Ajout du plugin jquery "showHide.jr" pour l'affichage "lire la suite"
+  Copier ou coller :
+  \xoopsfaq\_ressources/showHide.js
+  dans :
+  /xoops_lib/Frameworks/jquery/plugins/showHide.js
+
+- Déplacement du code HTML des functions "displayAdminListing" dans des templates
+    class contents->displayAdminListing : admin/xoopsfaq_contents.html
+    class category->displayAdminListing : admin/xoopsfaq_category.html
+- "color_set"
+  table category ajout du champ "categorys_color_set" qui permet un affichage des category par couleur
+  ajout des css nécéssaires dans assets/css
+- Refonte complete du front office avec affichage par catégorie et utilisation du plugin "showhide"
+- Ajout des permissions "admin du module", "admin des categorys", "admin des questions"
+- Ajout des permissions de "visualisation par categorie" dans le front office
+- Ajout des boutons d'édition, ajout et suppression pour les categories dans le front office (soumis à parmissions)
+- Ajout des boutons d'édition, ajout et suppression pour les questions dans le front office (soumis à parmissions)
+- nettoyage partiel du code
+- optimisation partielle du code
+- Harmonisation du nom des constantes de langues
+- Ajout d'une option dans "xoops_version.php" permettant de conserver l'anciene interface (nouvelle inerface pa défaut)
+- Categories ajout des propriétés:
+    show_hidetext : affiche ou non le texte "fermer" des div une fois avoir cliquer sur "lire la suite"
+    hidetext_align : permet d'aligner à drite le texte "lire la suite"
+- Ajout de l'onglet "About"
+- Révision de l'interface admin
+- divers corrections: 
+----- affichage des commentaires,
+----- constantes de langue,
+----- indice de tableau inexistant, ...
+
+- Ajout des boutons "edit", delete", ... dans le font office soumlis à permissions
+
+
+=> version 2.10 du 25/01/2016 (JJDai - jjdelalandre@orange.fr)
+------------------------------------------------------
+- Intégration du framework "moduleadmin"
+- adaptatation du fichier "menu.php" pour le "blue move"
+- Suppresion des images d'onglet devenues inutiles
+- Ajout des icones 32x32 pour admin
+- Ajout du champ "answer" pour une réponse affichée dans les sommaire du module
+- Ajout des champs seealso1 libseealso1 seealso2 libseealso2 seealso3 libseealso3
+  pour ajouter des liens externes sur des documentations par exemple
+- Ajout des fonctions install, uninstall et update.
+  la fonction "update" ajoute les nouveaux champs si nécessaires
+- modification des templates pour intégrer les nouveaux champs
+- correction et mise à jour des fichiers de langues
+
+=> version 1.20
+--------------------
+This mudule has been refactored nearly 99% and I have replaced all old code with new. Only the templates havent changed that much

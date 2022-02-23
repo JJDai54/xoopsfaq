@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Name: main.php
  * Description: Xoops FAQ module user language defines
@@ -25,19 +25,19 @@ include_once "common.php";
 /**
  * Xoops FAQ Main Page
  */
-define( '_MA_FAQ_XOOPSFAQ', 'FAQ' );
-define( '_MA_FAQ_FAQ_TOC', 'Table des matières' );
-define( '_MA_FAQ_DOCS', 'FAQ' );
-define( '_MA_FAQ_MAIN', 'Principal' );
-define( '_MA_FAQ_BACKTOTOP', 'Retour au début' );
-define( '_MA_FAQ_BACKTOINDEX', 'Retour à l\'index' );
+define('_MA_FAQ_XOOPSFAQ', 'FAQ' );
+define('_MA_FAQ_FAQ_TOC', 'Table des matières' );
+define('_MA_FAQ_DOCS', 'FAQ' );
+define('_MA_FAQ_MAIN', 'Principal' );
+define('_MA_FAQ_BACKTOTOP', 'Retour au début' );
+define('_MA_FAQ_BACKTOINDEX', 'Retour à l\'index' );
 
 //------------------------------------------------------------
-define( '_MA_FAQ_SEEALSO', 'Voir aussi' );
-define( '_MA_FAQ_READ_MORE', '../.. Lire la suite ../..' );
-define( '_MA_FAQ_READ_MINUS', 'Fermer' );
-define( '_MA_FAQ_FAQ', 'Foire Aux Questions' );
-define( '_MA_FAQ_MENU_COMMENTS', 'Commentaires' );
+define('_MA_FAQ_SEEALSO', 'Voir aussi' );
+define('_MA_FAQ_READ_MORE', '../.. Lire la suite ../..' );
+define('_MA_FAQ_READ_MINUS', 'Fermer' );
+define('_MA_FAQ_FAQ', 'Foire Aux Questions' );
+define('_MA_FAQ_MENU_COMMENTS', 'Commentaires' );
 
 
 ?>
