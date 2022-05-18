@@ -151,8 +151,8 @@ Caret=5,52
 TopLine=54
 Caret=10,79
 [xoops_version.php]
-TopLine=27
-Caret=19,39
+TopLine=87
+Caret=15,39
 [admin\index.php]
 TopLine=32
 Caret=1,54
